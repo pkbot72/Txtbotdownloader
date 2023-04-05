@@ -38,9 +38,9 @@ import os
 
 bot = Client(
     "bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=os.environ.get("6123256683:AAFiU815NR0aoptAFBfF1SnjExsIFFVFXvw"),
+    api_id=int(os.environ.get("10577960")),
+    api_hash=os.environ.get("80fd047285f4e94ca80311928b6bb5da")
 )
 auth_users = [ int(chat) for chat in os.environ.get("AUTH_USERS").split(",") if chat != '']
 sudo_users = auth_users
