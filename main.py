@@ -42,9 +42,9 @@ bot = Client(
     api_id=int(os.environ.get("10577960")),
     api_hash=os.environ.get("80fd047285f4e94ca80311928b6bb5da")
 )
-auth_users = [ int(chat) for chat in os.environ.get("AUTH_USERS").split(",") if chat != '']
+auth_users = [ int(chat) for chat in os.environ.get("5593532344").split(",") if chat != '']
 sudo_users = auth_users
-sudo_groups = [ int(chat) for chat in os.environ.get("GROUPS").split(",")  if chat != '']
+sudo_groups = [ int(chat) for chat in os.environ.get("kdsudo").split(",")  if chat != '']
 
 @bot.on_message(filters.command(["start"])&  (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
